@@ -3,7 +3,7 @@ import { Shadow } from "@/types/shadow";
 
 export const ShadowGrid = ({ shadows }: { shadows: Shadow[] }) => {
     return (
-        <div className="flex items-start gap-12 flex-wrap py-5 px-5">
+        <div className="flex items-start gap-8 lg:gap-12 flex-wrap px-1 md:px-3">
             {shadows.map((item) => (
                 <div id={item.id}>
                     <ShadowCard shadow={item} />
