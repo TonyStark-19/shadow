@@ -26,7 +26,7 @@ export const Shadows: Shadow[] = [
         tailwindCss: "shadow-[2px_2px_2px_2px_rgb(211,211,211)]"
     },
     {
-        id: "box-subtle-bottom-right-gray",
+        id: "box-strong-sharp-black",
         category: "box",
         name: "Strong Sharp Black",
         style: "border border-black",
@@ -196,9 +196,9 @@ export const Shadows: Shadow[] = [
         tailwindCss: "drop-shadow-[20px_-14px_10px_rgba(0,0,0,0.6)]"
     },
     {
-        id: "drop-shadow-angled-dramatic",
+        id: "drop-shadow-soft-top-light",
         category: "drop",
-        name: "Angled Dramatic Shadow",
+        name: "Top Light Soft",
         vanillaCss: "filter: drop-shadow(0 -10px 6px rgba(0,0,0,0.3))",
         tailwindCss: "drop-shadow-[0_-10px_6px_rgba(0,0,0,0.3)]"
     },
