@@ -23,13 +23,13 @@ export const ShadowShowcase = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="text-secondary mt-0.5"> Explore ready-to-use shadow styles</motion.p >
+                className="text-secondary mt-0.5 tracking-wide"> Explore ready-to-use shadow styles</motion.p >
 
             <motion.div initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }} className="flex items-center gap-3 md:gap-5 bg-muted my-5 p-2 rounded-lg">
                 {categories.map((category) => (
                     <div key={category}
-                        className={`rounded-lg px-4 py-2 font-medium text-base transition-all duration-300 hover:bg-white cursor-pointer ${activeTab === category ? "bg-accent/70" : ""}`}
+                        className={`rounded-lg px-4 py-2 font-medium text-base tracking-wide transition-all duration-300 hover:bg-white cursor-pointer ${activeTab === category ? "bg-accent/70" : ""}`}
                         onClick={() => setActiveTab(category)}
                     >
                         {category.charAt(0).toUpperCase() + category.slice(1)}

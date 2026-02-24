@@ -10,9 +10,9 @@ export const Hero = () => {
                 transition={{ duration: 0.3, ease: "easeOut" }}
                 viewport={{ once: true }}
                 className="mt-7 text-xs md:text-sm bg-muted px-3 py-2 rounded-xl border border-neutral-300
-            shadow-[0px_0px_10px_5px_rgb(245,245,245)] text-secondary flex items-center justify-center gap-2">
-                <div className="size-2 rounded-full bg-yellow-500 animate-pulse" />
-                Production-Ready Shadow Snippets
+            shadow-[0px_0px_10px_5px_rgb(245,245,245)] text-secondary flex items-center justify-center gap-2 tracking-wide">
+                <div className="size-2 rounded-full bg-yellow-500 animate-pulse " />
+                Production Ready Shadow Snippets
             </motion.div>
 
             <motion.h1 initial={{ opacity: 0, y: 10, filter: "blur(2px)" }}
@@ -29,7 +29,7 @@ export const Hero = () => {
                 whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="text-lg md:text-xl text-center max-w-xl font-medium text-secondary">
+                className="text-lg md:text-xl text-center max-w-xl font-medium tracking-wide text-secondary">
                 A curated collection of box, drop, and text shadows crafted for real-world interfaces.
             </motion.p>
 
@@ -38,13 +38,13 @@ export const Hero = () => {
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 viewport={{ once: true }}
                 className="bg-accent/90 px-5 py-2 rounded-lg shadow-[0px_0px_30px_12px_rgb(255,240,245)]
-             text-base lg:text-lg font-medium mt-1 lg:mt-2 hover:bg-accent/80">Browse Shadows</motion.button>
+              lg:text-lg font-medium mt-1 lg:mt-2 text-sm hover:bg-accent/80">Browse Shadows</motion.button>
 
             <motion.div initial={{ opacity: 0, filter: "blur(2px)" }}
                 whileInView={{ opacity: 1, filter: "blur(0px)" }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className=" flex items-center justify-center gap-2 my-3 md:my-4 lg:my-5 text-secondary text-base flex-wrap">
+                className=" flex items-center justify-center gap-2 my-3 md:my-4 lg:my-5 text-secondary tracking-wide text-lg flex-wrap">
                 <div>No adjustments <span className="text-black">|</span></div>
                 <div>No complexity <span className="text-black">|</span></div>
                 <span>Just copy and ship</span>
