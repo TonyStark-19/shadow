@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import { Check } from "lucide-react";
 
 export const ShadowCard = ({ shadow }: { shadow: Shadow }) => {
-
     const [copy, setCopy] = useState<{ isCopied: boolean, typeCopy: string } | null>(null);
 
     useEffect(() => {
@@ -42,10 +41,11 @@ export const ShadowCard = ({ shadow }: { shadow: Shadow }) => {
                 </svg>}
 
             <div className="absolute bottom-0 left-0 w-full h-full flex flex-col justify-center gap-4 p-4
-            opacity-0 group-hover:opacity-100 duration-300 transition-all translate-y-5 group-hover:translate-y-0 bg-neutral-100">
+            opacity-0 group-hover:opacity-100 duration-300 transition-all translate-y-5 group-hover:translate-y-0 bg-muted">
 
-                <div className="flex items-center justify-center text-xl text-center text-accent">{shadow.name}</div>
-                <button className="bg-neutral-200 border border-neutral-300 p-1 rounded-lg flex items-center justify-center"
+                <div className="flex items-center justify-center font-semibold text-lg text-center text-accent">{shadow.name}</div>
+
+                <button className="border border-neutral-300 hover:bg-neutral-200  transition-al duration-300 text-secondary p-1 rounded-lg flex items-center justify-center"
                     onClick={() => handleCopy(shadow.tailwindCss, "tailwind")}>
                     {(copy && copy.typeCopy === "tailwind") ? (<div className="flex items-center justify-center gap-1">
                         <Check />
@@ -53,7 +53,7 @@ export const ShadowCard = ({ shadow }: { shadow: Shadow }) => {
                     </div>) : "Copy Tailwind"}
                 </button>
 
-                <button className="bg-neutral-200 border border-neutral-300 p-1 rounded-lg flex items-center justify-center"
+                <button className=" border border-neutral-300 p-1 text-secondary hover:bg-neutral-200 transition-al duration-300 rounded-lg flex items-center justify-center"
                     onClick={() => handleCopy(shadow.vanillaCss, "vanilla")}>
                     {(copy && copy.typeCopy === "vanilla") ? (<div className="flex items-center justify-center gap-1">
                         <Check />
