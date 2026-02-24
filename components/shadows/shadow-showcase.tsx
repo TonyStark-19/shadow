@@ -13,7 +13,7 @@ export const ShadowShowcase = () => {
     const filteredShadows = Shadows.filter((item) => activeTab === "all" ? true : item.category === activeTab);
 
     return (
-        <div className="p-4">
+        <div id="shadow-showcase" className="p-4">
             <motion.h2 initial={{ opacity: 0, y: 5 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}

@@ -3,6 +3,13 @@
 import { motion } from "motion/react";
 
 export const Hero = () => {
+
+    const handleBrowseShadowsClick = () => {
+        document.getElementById("shadow-showcase")?.scrollIntoView({
+            behavior: "smooth",
+        });
+    };
+
     return (
         <main className="p-3 md:p-5 flex flex-col gap-3 md:gap-4 items-center justify-center ">
             <motion.div initial={{ opacity: 0, filter: "blur(2px)" }}
@@ -37,6 +44,7 @@ export const Hero = () => {
                 whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 viewport={{ once: true }}
+                onClick={handleBrowseShadowsClick}
                 className="bg-accent/90 px-5 py-2 rounded-lg shadow-[0px_0px_30px_12px_rgb(255,240,245)]
               lg:text-lg font-medium mt-1 lg:mt-2 text-sm hover:bg-accent/80">Browse Shadows</motion.button>
 
