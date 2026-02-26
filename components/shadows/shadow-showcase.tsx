@@ -27,13 +27,13 @@ export const ShadowShowcase = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="text-xl md:text-3xl font-semibold">CSS & Tailwind Shadows</motion.h2>
+                className="text-2xl md:text-3xl font-semibold">CSS & Tailwind Shadows</motion.h2>
 
             <motion.p initial={{ opacity: 0, y: 5 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="text-secondary mt-1 tracking-wide pb-5">Explore ready-to-use shadow styles</motion.p>
+                className="text-secondary mt-1 tracking-wide pb-5 max-[500px]:pb-2">Explore ready-to-use shadow styles</motion.p>
 
             <motion.div
                 initial={{ opacity: 0 }}
@@ -51,8 +51,11 @@ export const ShadowShowcase = () => {
                                 transition={{ type: "spring", bounce: 0.2 }}
                             />}
 
-                        <span className={`relative text-xs md:text-sm ${activeTab === category ? "text-black" : "text-secondary"} transition-all duration-300`} >
-                            {category.charAt(0).toUpperCase() + category.slice(1)}  ({counts[category]})
+                        <span className={`relative text-sm ${activeTab === category ? "text-black" : "text-secondary"} transition-all duration-300`} >
+                            {category.charAt(0).toUpperCase() + category.slice(1)}
+                            <span className="max-[500px]:hidden">
+                                {" "}({counts[category]})
+                            </span>
                         </span>
                     </div>
                 ))}

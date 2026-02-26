@@ -24,7 +24,7 @@ export const ShadowCard = ({ shadow }: { shadow: Shadow }) => {
 
     return (
         <div className={`${shadow.category === "box" && shadow.tailwindCss} ${shadow.style && shadow.style} 
-        overflow-hidden relative size-52 lg:size-62 flex items-center justify-center group`}>
+        overflow-hidden relative max-[600px]:w-[90%] w-full size-52 lg:size-62 flex items-center justify-center group`}>
 
             {shadow.category !== "drop" && <span className={`${shadow.category === "text" && shadow.tailwindCss}
             text-xl group-hover:opacity-0 opacity-100 duration-75 transition-opacity`}>

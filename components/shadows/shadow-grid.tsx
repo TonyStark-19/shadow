@@ -6,7 +6,7 @@ import { Shadow } from "@/types/shadow";
 
 export const ShadowGrid = ({ shadows }: { shadows: Shadow[] }) => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-14 flex-wrap px-1 pt-5">
+        <div className="grid grid-cols-[minmax(260px,1fr)] max-[600px]:grid-cols-1 min-[600px]:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-14 flex-wrap px-1 pt-5">
             {shadows.map((item, i) => (
                 <motion.div initial={{ opacity: 0, y: 10, filter: "blur(2px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}

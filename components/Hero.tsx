@@ -12,7 +12,7 @@ export const Hero = () => {
     };
 
     return (
-        <main className="p-3 md:p-5 flex flex-col gap-3 md:gap-4 items-center justify-center">
+        <main className="p-5 flex flex-col gap-3 md:gap-4 items-center justify-center">
             <motion.div initial={{ opacity: 0, filter: "blur(2px)" }}
                 whileInView={{ opacity: 1, filter: "blur(0px)" }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
@@ -27,7 +27,7 @@ export const Hero = () => {
                 whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="max-w-xl text-3xl md:text-4xl lg:text-6xl font-bold text-center my-3 lg:my-4 text-shadow-[2px_3px_3px_rgba(0,0,0,0.2)]">
+                className="max-w-xl text-4xl md:text-5xl lg:text-6xl font-bold text-center my-3 lg:my-4 text-shadow-[2px_3px_3px_rgba(0,0,0,0.2)]">
                 Beautiful Shadows
                 Ready to Use
             </motion.h1>
@@ -45,12 +45,12 @@ export const Hero = () => {
                 whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="flex items-center gap-4 mt-1 lg:mt-2"
+                className="flex items-center gap-4 mt-1 lg:mt-2 max-[500px]:flex-col max-[500px]:w-full"
             >
                 <button
                     onClick={handleBrowseShadowsClick}
-                    className="bg-accent/90 px-5 py-2 rounded-lg shadow-[0px_0px_30px_12px_rgb(255,240,245)] lg:text-lg font-medium text-sm
-                    hover:bg-accent/80 cursor-pointer flex items-center gap-2"
+                    className="bg-accent/90 px-5 py-2 max-[500px]:py-2.5 rounded-lg shadow-[0px_0px_30px_12px_rgb(255,240,245)] lg:text-lg font-medium text-md
+                    hover:bg-accent/80 cursor-pointer flex items-center gap-2 max-[500px]:w-full justify-center"
                 >
                     <CodeXml size={18} />
                     Browse Shadows
@@ -60,10 +60,11 @@ export const Hero = () => {
                     href="https://github.com/daman599/shadow/blob/main/CONTRIBUTING.md"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="max-[500px]:w-full justify-center"
                 >
                     <button
-                        className="bg-neutral-900 text-white px-5 py-2 rounded-lg lg:text-lg font-medium text-sm hover:bg-neutral-800 cursor-pointer
-                    flex items-center gap-2"
+                        className="bg-neutral-900 text-white px-5 py-2 max-[500px]:py-2.5 rounded-lg lg:text-lg font-medium text-md
+                        hover:bg-neutral-800 cursor-pointer flex items-center gap-2 max-[500px]:w-full justify-center"
                     >
                         <HeartHandshake size={18} />
                         Contribute
