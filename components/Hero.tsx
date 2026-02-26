@@ -56,13 +56,19 @@ export const Hero = () => {
                     Browse Shadows
                 </button>
 
-                <button
-                    className="bg-neutral-900 text-white px-5 py-2 rounded-lg lg:text-lg font-medium text-sm hover:bg-neutral-800 cursor-pointer
-                    flex items-center gap-2"
+                <a
+                    href="https://github.com/daman599/shadow/blob/main/CONTRIBUTING.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    <HeartHandshake size={18} />
-                    Contribute
-                </button>
+                    <button
+                        className="bg-neutral-900 text-white px-5 py-2 rounded-lg lg:text-lg font-medium text-sm hover:bg-neutral-800 cursor-pointer
+                    flex items-center gap-2"
+                    >
+                        <HeartHandshake size={18} />
+                        Contribute
+                    </button>
+                </a>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, filter: "blur(2px)" }}
